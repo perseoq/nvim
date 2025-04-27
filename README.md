@@ -29,8 +29,8 @@ curl -s https://raw.githubusercontent.com/perseoq/nvim/refs/heads/main/nvim.sh |
     ```
 
    ```vim
-    :CocInstall coc-pyright coc-sql coc-rust-analyzer coc-clangd coc-tsserver coc-sumneko-lua
-    ```
+   :CocInstall coc-pyright coc-sql coc-rust-analyzer coc-clangd coc-tsserver coc-sumneko-lua
+   ```
 
 5. Sales con `:q` dos veces, estando en el `prompt` de la terminal ejecutas:
     ```sh
