@@ -58,3 +58,68 @@ curl -s https://raw.githubusercontent.com/perseoq/nvim/refs/heads/main/nvim.sh |
 ## Apariencia
 - Tema Dracula con fondo oscuro
 - Línea de estado personalizada
+
+# Extensiones de CoC (Conquer of Completion) Instaladas
+
+Ya en nvim:
+```js
+:CocInstall coc-pyright coc-sql coc-rust-analyzer coc-clangd coc-tsserver coc-sumneko-lua
+``` 
+
+## 🐍 `coc-pyright`  
+- **Lenguaje**: Python  
+- **Funcionalidades**:  
+  - Autocompletado inteligente  
+  - Verificación de tipos estáticos (type checking)  
+  - Soporte para Python 3.6+  
+  - Análisis de código en tiempo real  
+  - Compatible con `mypy` y `PEP 484`  
+
+## 🗃 `coc-sql`  
+- **Lenguaje**: SQL  
+- **Funcionalidades**:  
+  - Autocompletado de sintaxis SQL  
+  - Resaltado de errores  
+  - Soporte para múltiples motores de bases de datos (MySQL, PostgreSQL, SQLite, etc.)  
+
+## 🦀 `coc-rust-analyzer`  
+- **Lenguaje**: Rust  
+- **Funcionalidades**:  
+  - Integración con `rust-analyzer`  
+  - Autocompletado de alto nivel  
+  - Análisis de código en tiempo real  
+  - Refactorización  
+  - Soporte para Cargo y módulos  
+
+## 🖥 `coc-clangd`  
+- **Lenguaje**: C/C++  
+- **Funcionalidades**:  
+  - Basado en `clangd` (LSP oficial de LLVM)  
+  - Autocompletado preciso  
+  - Diagnóstico de errores y warnings  
+  - Soporte para CMake y proyectos grandes  
+
+## 🌐 `coc-tsserver`  
+- **Lenguaje**: JavaScript/TypeScript  
+- **Funcionalidades**:  
+  - Autocompletado para JS/TS  
+  - Soporte para proyectos modernos (ES6+, TSX)  
+  - Refactorización y renombrado seguro  
+  - Compatible con `node_modules` y `package.json`  
+
+## 🎮 `coc-sumneko-lua`  
+- **Lenguaje**: Lua  
+- **Funcionalidades**:  
+  - Soporte para Lua 5.1, 5.3, 5.4 y LuaJIT  
+  - Autocompletado contextual  
+  - Análisis de código estático  
+  - Soporte para Neovim Lua API (útil para desarrollo de plugins)  
+
+---
+
+### 🔧 **Cómo instalar**  
+Ejecutar en Neovim:  
+```vim
+:CocInstall coc-pyright coc-sql coc-rust-analyzer coc-clangd coc-tsserver coc-sumneko-lua
+
+
