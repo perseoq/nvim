@@ -42,8 +42,7 @@ mkdir -p ~/.config/nvim && \
 curl -o ~/.config/nvim/init.vim https://raw.githubusercontent.com/perseoq/nvim/refs/heads/main/init.vim
 
 # instalando dependencias
-cd ~/.config/nvim/bundle/coc.nvim/
-npm i
+#cd ~/.config/nvim/bundle/coc.nvim/
 
 echo "¡Instalación completada!"
 
