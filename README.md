@@ -2,6 +2,16 @@
 
 ## Instalar
 
+### 📋 Requisitos principales
+
+#### **Node.js** (Obligatorio)
+- **Descarga**: [https://nodejs.org/](https://nodejs.org/)  
+- **Versión mínima recomendada**: `v16.x` o superior  
+- **Verificar instalación**:
+  ```bash
+  node --version
+  npm --version
+
 En terminal pega esta línea:
 ```js
 curl -s https://raw.githubusercontent.com/perseoq/nvim/refs/heads/main/nvim.sh | bash
