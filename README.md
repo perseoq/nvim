@@ -1,5 +1,12 @@
 # Configuración de Neovim
 
+## Instalar
+
+En terminal pega esta línea:
+```js
+curl -s https://raw.githubusercontent.com/perseoq/nvim/refs/heads/main/nvim.sh | bash
+```
+
 ## Visualización
 - **Números de línea**: `set number`
 - **Codificación UTF-8**:
@@ -51,10 +58,3 @@
 ## Apariencia
 - Tema Dracula con fondo oscuro
 - Línea de estado personalizada
-
-## Instalar
-
-En terminal pega esta línea:
-```bash
-curl -s https://raw.githubusercontent.com/perseoq/nvim/refs/heads/main/nvim.sh | bash
-```
