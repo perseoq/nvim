@@ -8,6 +8,27 @@ En terminal pega esta línea:
 curl -s https://raw.githubusercontent.com/perseoq/nvim/refs/heads/main/nvim.sh | bash
 ```
 
+# Instalación de Plugins en Neovim
+
+## Pasos
+
+1. Abre la terminal y ejecuta:
+    ```bash
+    nvim
+    ```
+    Te marcará un error. Simplemente presiona `ENTER` para continuar.
+
+2. Dentro de `nvim`, ejecuta el siguiente comando:
+    ```vim
+    :BundleInstall
+    ```
+
+3. Luego, ejecuta también:
+    ```vim
+    :PluginInstall
+    ```
+
+
 ## Visualización
 - **Números de línea**: `set number`
 - **Codificación UTF-8**:
