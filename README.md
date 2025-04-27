@@ -26,10 +26,13 @@ curl -s https://raw.githubusercontent.com/perseoq/nvim/refs/heads/main/nvim.sh |
 3. Luego, ejecuta también:
     ```vim
     :PluginInstall
+    ```
+
+   ```vim
     :CocInstall coc-pyright coc-sql coc-rust-analyzer coc-clangd coc-tsserver coc-sumneko-lua
     ```
 
-4. Sales con `:q` dos veces, estando en el `prompt` de la terminal ejecutas:
+5. Sales con `:q` dos veces, estando en el `prompt` de la terminal ejecutas:
     ```sh
     cd ~/.vim/bundle/coc.nvim/ && npm i
     ```
