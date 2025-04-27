@@ -28,7 +28,10 @@ curl -s https://raw.githubusercontent.com/perseoq/nvim/refs/heads/main/nvim.sh |
     :PluginInstall
     ```
 
-
+4. Sales con `:q` dos veces, estando en el `prompt` de la terminal ejecutas:
+    ```sh
+    cd ~/.vim/bundle/coc.nvim/ && npm i
+    ```
 ## Visualización
 - **Números de línea**: `set number`
 - **Codificación UTF-8**:
