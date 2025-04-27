@@ -13,6 +13,22 @@ else
     exit 1
 fi
 
+if command -v curl &> /dev/null; then
+    echo "curl ya está instalado."
+else
+    echo "curl no está instalado. Instalando..."
+    # Detectar distribución e instalar
+    if command -v apt &> /dev/null; then
+        sudo apt update && sudo apt install -y curl
+    elif command -v dnf &> /dev/null; then
+        sudo dnf install -y curl
+    else
+        echo "Distribución no soportada (no se encontró apt/dnf)."
+        exit 1
+    fi
+fi
+
+
 # Configuración común de Neovim (Vundle y CoC)
 echo "Configurando Neovim..."
 mkdir -p ~/.config/nvim/bundle
