@@ -37,6 +37,8 @@ pip3 install --user pynvim
 cd ~/.config/nvim/bundle
 git clone --branch release https://github.com/neoclide/coc.nvim.git --depth=1
 
+# Descargar las configuraciones
+mkdir -p ~/.config/nvim && \
 curl -o ~/.config/nvim/init.vim https://raw.githubusercontent.com/perseoq/nvim/refs/heads/main/init.vim
 
 echo "¡Instalación completada!"
