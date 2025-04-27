@@ -61,10 +61,11 @@ curl -s https://raw.githubusercontent.com/perseoq/nvim/refs/heads/main/nvim.sh |
 
 # Extensiones de CoC (Conquer of Completion) Instaladas
 
-Ya en nvim:
-```js
+### 🔧 **Cómo instalar**  
+Ejecutar en Neovim:  
+```vim
 :CocInstall coc-pyright coc-sql coc-rust-analyzer coc-clangd coc-tsserver coc-sumneko-lua
-``` 
+```
 
 ## 🐍 `coc-pyright`  
 - **Lenguaje**: Python  
@@ -115,11 +116,7 @@ Ya en nvim:
   - Análisis de código estático  
   - Soporte para Neovim Lua API (útil para desarrollo de plugins)  
 
----
 
-### 🔧 **Cómo instalar**  
-Ejecutar en Neovim:  
-```vim
-:CocInstall coc-pyright coc-sql coc-rust-analyzer coc-clangd coc-tsserver coc-sumneko-lua
+
 
 
