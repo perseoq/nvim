@@ -73,7 +73,7 @@ Plugin 'neoclide/coc.nvim'
 "CocInstall coc-pyright coc-sql coc-rust-analyzer coc-clangd coc-tsserver coc-sumneko-lua
 
 Plugin 'SirVer/ultisnips'
-
+Plugin 'rust-lang/rust.vim'
 
 " Finaliza la configuración de Vundle
 call vundle#end()
@@ -114,6 +114,36 @@ endfunction
 nnoremap <RightMouse> :call CocActionAsync('codeAction')<CR>
 vnoremap <RightMouse> :call CocActionAsync('codeAction')<CR>
 
+" Los snippets se guardan en:
+" ~/.config/nvim/UltiSnips/python.snippets (para python)
+" ~/.config/nvim/UltiSnips/all.snippets (snippets globales)
 let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+
+" Configurar python3_host_prog automáticamente buscando ./env
+function! SetupPythonHost()
+    if filereadable(getcwd() . '/env/bin/python')
+        let g:python3_host_prog = getcwd() . '/env/bin/python'
+    elseif exists('$VIRTUAL_ENV')
+        let g:python3_host_prog = $VIRTUAL_ENV . '/bin/python'
+    else
+        let g:python3_host_prog = '/usr/bin/python3'
+    endif
+endfunction
+
+" Llamar la función al iniciar
+call SetupPythonHost()
+
+" Cada vez que cambies de directorio, reconfigura el Python host
+autocmd DirChanged * call SetupPythonHost()
+let g:rust_clip_command = 'xclip -selection clipboard'
+" Guardar y salir con Ctrl + x (como :x)
+nnoremap <C-x> :x<CR>
+" Salir sin guardar con Ctrl + q (como :q!)
+nnoremap <C-q> :q!<CR>
+
+
+
+
+
